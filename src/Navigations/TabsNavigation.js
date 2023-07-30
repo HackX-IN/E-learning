@@ -8,12 +8,13 @@ const Tab = createBottomTabNavigator();
 function MyTabs() {
   return (
     <Tab.Navigator
-      initialRouteName="Feed"
+      initialRouteName="Home"
       screenOptions={{
         tabBarActiveTintColor: "#e91e63",
         headerShown: false,
         tabBarStyle: {
-          height: Platform.OS === "android" ? 60 : 60,
+          height: Platform.OS === "android" ? 60 : 70,
+          paddingHorizontal: 6,
         },
       }}
     >
